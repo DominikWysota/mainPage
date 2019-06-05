@@ -1,0 +1,402 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+html {
+	font-size: 10px;
+}
+
+article,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+	display: block;
+}
+
+/*Header and Baner*/
+
+header {
+	height: 70vh;
+	width: 100%;
+	position: relative;
+	overflow-x: hidden;
+	background: url(img/mountain.jpg);
+	background-position: center;
+}
+
+#groupone {
+	font-family: 'Roboto Condensed', sans-serif;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: white;
+	width: 100%;
+}
+
+#groupone h1,
+	{
+	font-size: 3.5rem;
+}
+
+#groupone.active {
+	visibility: hidden;
+}
+
+#menu,
+#menu li {
+	display: block;
+	list-style: none;
+
+}
+
+#menu {
+	position: absolute;
+	right: 0%;
+	top: 20%;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a:link,
+#menu a:visited {
+	text-decoration: none;
+	display: block;
+	width: 95px;
+	text-align: center;
+	padding: 5px 0;
+	font-weight: bold;
+	color: white;
+	transition: 0.5s;
+}
+
+#menu a:hover {
+	color: #59aab9;
+	border-bottom: 2px solid #59aab9;
+}
+
+#baner {
+	top: 0;
+	z-index: 1;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	background: rgb(0, 0, 0, 0.5);
+}
+
+.hamburger {
+	width: 40px;
+	height: 5px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 90%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	transition: .5s;
+	z-index: 1;
+}
+
+.hamburger:before,
+.hamburger:after {
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 5px;
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	transition: .5s;
+}
+
+.hamburger:before {
+	top: -12px;
+}
+
+.hamburger:after {
+	top: 12px;
+}
+
+
+nav.active .hamburger {
+	background: rgba(0, 0, 0, 0);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+nav.active .hamburger:before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+nav.active .hamburger:after {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+#menu_mobile {
+	position: absolute;
+	height: 48vh;
+	top: 50px;
+	z-index: 2;
+}
+
+.a {
+	position: fixed;
+	height: 12vh;
+	width: 100%;
+}
+
+.about {
+	background: rgba(255, 255, 255, 0.88);
+}
+
+.skill {
+	margin-top: 12vh;
+	background: rgba(255, 255, 255, 0.88);
+}
+
+.project {
+	margin-top: 24vh;
+	background: rgba(255, 255, 255, 0.88);
+}
+
+.contact {
+	margin-top: 36vh;
+	background: rgba(255, 255, 255, 0.88);
+}
+
+.about,
+.skill,
+.project,
+.contact:hover {}
+
+#menu_mobile h3 {
+	font-family: 'Roboto Condensed', sans-serif;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #464646;
+	width: 100%;
+	font-size: 2rem;
+}
+
+
+/*Main*/
+
+/*skill*/
+
+/*icon*/
+
+.container_skill {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.container_skill h4 {
+	font-family: 'Roboto Condensed', sans-serif;
+	position: relative;
+	top: 55px;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.container_skill h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	position: relative;
+	top: 55px;
+	text-align: center;
+	font-size: 1rem;
+	font-style: italic;
+}
+
+.nav_skills {
+	position: relative;
+	top: 80px;
+	max-width: 300px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.icon {
+	min-width: 100px;
+	height: 100px;
+	flex-grow: 1;
+}
+
+
+.f_img {
+	background-image: url(img/icon_black/front.png);
+	background-size: cover;
+	height: 45px;
+	width: 45px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+}
+
+.s_img {
+	background-image: url(img/icon_black/back.png);
+	background-size: cover;
+	height: 40px;
+	width: 40px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+}
+
+.t_img {
+	background-image: url(img/icon_black/other.png);
+	background-size: cover;
+	height: 30px;
+	width: 30px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+}
+
+.i_rot1 {
+	border: solid 2px #000000;
+	border-radius: 10px;
+	height: 70px;
+	width: 70px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%) rotate(45deg);
+}
+
+.i_rot2 {
+	border: solid 2px #000000;
+	border-radius: 10px;
+	height: 70px;
+	width: 70px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%) rotate(45deg);
+}
+
+.i_rot3 {
+	border: solid 2px #000000;
+	border-radius: 10px;
+	height: 70px;
+	width: 70px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%) rotate(45deg);
+}
+
+.i_second img {
+	height: 40px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+}
+
+.i_third img {
+	height: 30px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+}
+
+.f_img.active {
+	background-image: url(img/icon_white/front.png);
+}
+
+.i_rot1.active {
+	background: #324277;
+	border: solid 2px #dddddd;
+	border-radius: 10px;
+}
+
+.s_img.active {
+	background-image: url(img/icon_white/back.png);
+}
+
+.i_rot2.active {
+	background: #324277;
+	border: solid 2px #dddddd;
+	border-radius: 10px;
+}
+
+.t_img.active {
+	background-image: url(img/icon_white/other.png);
+}
+
+.i_rot3.active {
+	background: #324277;
+	border: solid 2px #dddddd;
+	border-radius: 10px;
+}
+
+/*about skill*/
+
+.about_skill {
+	position: relative;
+	top: 130px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.about_skill h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	font-size: 2.3rem;
+}
+
+.skill_content {
+	position: absolute;
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.backend {
+	visibility: hidden;
+}
+
+.other {
+	visibility: hidden;
+}
+
+/*Media*/
+
+@media screen and (max-width: 768px) {
+	header {
+		height: 100vh;
+	}
+	#menu {
+		visibility: hidden;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.hamburger {
+		visibility: hidden;
+	}
+	#menu_mobile {
+		visibility: hidden;
+	}
+	#baner.active {
+		background: rgb(0, 0, 0, 0.5);
+	}
+}
