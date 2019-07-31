@@ -46,6 +46,9 @@ frontend.addEventListener('click', () => {
 	frontImg.classList.add("active");
 	backImg.classList.remove("active");
 	otherImg.classList.remove("active");
+	document.querySelector(".frontend").style.visibility = "visible";
+	document.querySelector(".backend").style.visibility = "hidden";
+	document.querySelector(".other").style.visibility = "hidden";
 })
 backend.addEventListener('click', () => {
 	backend.classList.add("active");
@@ -54,6 +57,9 @@ backend.addEventListener('click', () => {
 	backImg.classList.add("active");
 	frontImg.classList.remove("active");
 	otherImg.classList.remove("active");
+	document.querySelector(".frontend").style.visibility = "hidden";
+	document.querySelector(".backend").style.visibility = "visible";
+	document.querySelector(".other").style.visibility = "hidden";
 })
 otherSkill.addEventListener('click', () => {
 	otherSkill.classList.add("active");
@@ -62,4 +68,7 @@ otherSkill.addEventListener('click', () => {
 	otherImg.classList.add("active");
 	backImg.classList.remove("active");
 	frontImg.classList.remove("active");
+	document.querySelector(".frontend").style.visibility = "hidden";
+	document.querySelector(".backend").style.visibility = "hidden";
+	document.querySelector(".other").style.visibility = "visible";
 })
