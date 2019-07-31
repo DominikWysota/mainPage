@@ -44,7 +44,8 @@ header {
 	font-size: 3.5rem;
 }
 
-#groupone.active {
+#groupone.active,
+.subsoil.active {
 	visibility: hidden;
 }
 
@@ -182,6 +183,15 @@ nav.active .hamburger:after {
 	font-size: 2rem;
 }
 
+.subsoil {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 90px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.582);
+}
+
 
 /*Main*/
 
@@ -268,16 +278,16 @@ nav.active .hamburger:after {
 	transform: translateY(-50%) translateX(-50%) rotate(45deg);
 }
 
-.f_img.active {
-	background-image: url(img/icon_white/front.png);
-}
-
 .i_rot1.active,
 .i_rot2.active,
 .i_rot3.active {
 	background: #324277;
 	border: solid 2px #dddddd;
 	border-radius: 10px;
+}
+
+.f_img.active {
+	background-image: url(img/icon_white/front.png);
 }
 
 .s_img.active {
