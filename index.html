@@ -129,7 +129,20 @@
 				</div>
 			</section>
 		</div>
-		<div class="contact"></div>
+		<div class="containerContact">
+			<h1>CONTACT</h1>
+			<div class="coctact-form">
+				<form id="coctact-form" method="post" action="contact-form-handler.php">
+					<input name="name" type="text" class="form-control" placeholder="Your Name" required>
+					<br>
+					<input name="email" type="email" class="form-control" placeholder="Your Email" required>
+					<br>
+					<textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
+					<br>
+					<input type="submit" class="form-control submit" value="SEND MESSAGE">
+				</form>
+			</div>
+		</div>
 	</main>
 	<script src="javascript.js"></script>
 </body>
