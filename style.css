@@ -400,6 +400,13 @@ nav.active .hamburger:after {
 	border-radius: 15px;
 }
 
+/* Contact */
+
+.contact {
+	width: 100%;
+	height: 100vh;
+}
+
 /*Media*/
 
 @media screen and (max-width: 768px) {
