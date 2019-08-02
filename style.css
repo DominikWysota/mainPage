@@ -331,6 +331,7 @@ nav.active .hamburger:after {
 /*Projects*/
 
 .projects {
+	padding-bottom: 20px;
 	width: 100%;
 	background-color: #324277;
 }
@@ -360,11 +361,43 @@ nav.active .hamburger:after {
 }
 
 .projectsContainer div:nth-child(n) {
+	position: relative;
 	border-radius: 15px;
 	margin-top: 20px;
 	background-color: white;
 	flex-basis: 300px;
 	height: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.projectsContainer button {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	background-color: white;
+	height: 30px;
+	margin-bottom: 10px;
+	width: 120px;
+	border-radius: 10px;
+	border: solid 1px #324277;
+	color: #324277;
+	font-size: 1rem;
+	transition: .5s;
+}
+
+.projectsContainer button:hover {
+	color: white;
+	background-color: #324277;
+	border-color: #000000;
+	font-size: 1.5rem;
+}
+
+.photoProject {
+	width: 240px;
+	position: absolute;
+	top: 20px;
+	border-radius: 15px;
 }
 
 /*Media*/
