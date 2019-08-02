@@ -24,8 +24,10 @@ $(document).ready(function () {
 //Code modifier color background baner
 const baner = document.getElementById("baner");
 window.addEventListener('scroll', (e) => {
-	if (e.pageY >= window.innerHeight) {
+	if (e.pageY >= window.innerHeight && e.pageY < (window.innerHeight * 2)) {
 		baner.style.backgroundColor = "#324277";
+	} else if (e.pageY >= (window.innerHeight * 2)) {
+		baner.style.backgroundColor = "rgb(0, 0, 0, 0.5)";
 	} else {
 		baner.style.backgroundColor = "rgb(0, 0, 0, 0.5)";
 	}

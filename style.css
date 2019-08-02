@@ -330,6 +330,42 @@ nav.active .hamburger:after {
 
 /*Projects*/
 
+.projects {
+	width: 100%;
+	background-color: #324277;
+}
+
+.projects>h4 {
+	font-family: 'Roboto Condensed', sans-serif;
+	padding-top: 65px;
+	text-align: center;
+	font-size: 2rem;
+	color: white;
+}
+
+.projects>h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	font-size: 1rem;
+	font-style: italic;
+	color: white;
+}
+
+.projectsContainer {
+	margin-top: 20px;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.projectsContainer div:nth-child(n) {
+	border-radius: 15px;
+	margin-top: 20px;
+	background-color: white;
+	flex-basis: 300px;
+	height: 200px;
+}
 
 /*Media*/
 
